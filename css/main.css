@@ -1,0 +1,41 @@
+#left-eye {
+  animation: look 3s ease-in-out infinite;
+}
+
+#right-eye {
+  animation: look 3s ease-in-out infinite;
+}
+
+@keyframes look {
+
+  0% {
+    transform: translate(-10px, 0);
+  }
+
+  50% {
+    transform: translate(10px,0);
+  }
+
+  100% {
+    transform: translate(-10px, 0);
+  }
+
+}
+
+#left-ear {
+  transition: all .5s linear;
+}
+
+#right-ear {
+  transition: all .5s linear;
+}
+
+#bear:hover #left-ear {
+  transform: translate(0, -15px);
+  transition: all .5s linear;
+}
+
+#bear:hover #right-ear {
+  transform: translate(0, -15px);
+  transition: all .5s linear;
+}
